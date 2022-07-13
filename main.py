@@ -4,10 +4,6 @@ import os
 import time
 from os.path import join
 import torch
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from torchvision import utils as utils
-from datasets.sythetic_reflection import GeneralDataset
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
@@ -19,8 +15,8 @@ import numpy as np
 from  loss.functions import *
 
 parser = argparse.ArgumentParser(description="Official Code for Zero-shor Learning for 360-degree Images")
-parser.add_argument('--saving_dir', type=str, default="./results", help='Path of the validation dataset')
-parser.add_argument('--data_dir', type=str, default="./", help='Path of the validation dataset')
+parser.add_argument('--saving_dir', type=str, default="./results", help='Path to save results')
+parser.add_argument('--data_dir', type=str, default="./", help='Path of the dataset')
 parser.add_argument('--omega1',   type=float, default=10.0, help='omega1')
 parser.add_argument('--omega2',   type=float, default=3.0, help='omega2')
 parser.add_argument('--omega3',   type=float, default=5.0, help='omega3')
