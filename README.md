@@ -38,9 +38,11 @@ zeroshot_reflection_removal
 |           |-- pano
 |           |-- refer
 |           |-- trans
+|-- weights
+|    |-- initial-epoch1.pth
 |-- main.py
 |-- main.sh
-| 
+|
 ```
 
 ## Inference 
